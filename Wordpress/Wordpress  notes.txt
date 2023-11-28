@@ -1,0 +1,11 @@
+Wordpress : 
+
+identifiant : "root"
+mdp : "root"
+
+---------------------
+
+PHP My Admin :
+
+identifiant : "root"
+mdp : ""
