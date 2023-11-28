@@ -1,0 +1,133 @@
+/* ----------------------------------------------------------------------
+    @@@ Général
+---------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* Tous les liens de l'app ont un padding afin d'augmenter la taille de la zone réactive */
+a {
+    color: currentColor;
+    display: inline-block;
+    padding: 10px;
+    transition: color 400ms ease-in-out;
+}
+a:hover {
+    color: rgb(32, 192, 255);
+}
+/* ----------------------------------------------------------------------
+    @@@ Layout
+---------------------------------------------------------------------- */
+#app-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    background: lime;
+}
+#app-top {
+    display: flex;
+    flex-grow: 1;
+}
+#app-bottom {
+    display: flex;
+    justify-content: center;
+    background: #595959;
+    color: #fff;
+    padding: 20px;
+}
+/* ----------------------------------------------------------------------
+    @@@ Sidebar
+---------------------------------------------------------------------- */
+#app-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    background: #595959;
+    color: #fff;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie album
+---------------------------------------------------------------------- */
+#app-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: linear-gradient(#000, #363636);
+}
+
+#album {
+    display: flex;
+    flex-grow: auto;
+    padding: 20px;
+}
+.cover {
+    margin-right: 20px;
+}
+.album-infos {
+    color: white;
+}
+.album-infos h1 {
+    font-size: 3em;
+}
+
+/* ----------------------------------------------------------------------
+    @@@ Partie tracklist
+---------------------------------------------------------------------- */
+#tracklist {
+    background: transparent;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.track-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.8em;
+    transition: color 400ms ease-in-out;
+}
+.track-item:hover {
+    color: rgb(32, 192, 255);
+    cursor: pointer;
+}
+#tracklist p {
+    margin: 0;
+    padding: 10px;
+}
+/* ----------------------------------------------------------------------
+    @@@ Partie Player : lecture en cours + controls
+---------------------------------------------------------------------- */
+#app-bottom .current {
+    display: flex;
+    flex-grow: 9;
+    background: #595959;
+    align-items: center;
+}
+#app-bottom .current-details {
+    margin-left: 20px;
+}
+#app-bottom .author {
+    font-size: 0.8em;
+    margin: 0;
+}
+#app-bottom .track {
+    color: rgb(32, 192, 255);
+    margin: 0 0 10px;
+}
+#app-bottom .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    background: #595959;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}

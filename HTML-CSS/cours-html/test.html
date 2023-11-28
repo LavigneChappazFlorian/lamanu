@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Manu</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../Memo/index.html"target="_blank">RedBull</a></li>
+            <li>La manu</li>
+            <li>Contact</li>
+        </ul>
+
+        <ol>
+            <li>Etape 1</li>
+            <li>Etape 2</li>
+            <li>Etape 3</li>
+        </ol>
+    </nav>
+
+
+    <table>
+        <caption>Largeur d'écran selon les points de ruptures</caption>
+        <thead>
+            <tr>
+                <th>Breakpoint</th>
+                <th>Content Space Width</th>
+                <th>Screen width (minimum)</th>
+                <th>Screen width (maximum)</th>
+                <th>% of desktop/tablet traffic</th>
+            </tr>
+            <tr>
+                <td>Tablet Portrait</td>
+                <td>768px</td>
+                <td>768</td>
+                <td>1023</td>
+                <td>16%</td>
+            </tr>
+            <tr>
+                <td>Tablet Landscape</td>
+                <td>1024px</td>
+                <td>1024</td>
+                <td>1084</td>
+                <td rowspan="2">50%</td>
+            </tr>
+            <tr>
+                <td>Dsktop</td>
+                <td>1084px</td>
+                <td>1084</td>
+                <td>15945</td>
+            </tr>
+            <tr>
+                <td>Desktop XL</td>
+                <td>1238px</td>
+                <td>1595</td>
+                <td>&infin;</td>
+                <td>34%</td>
+            </tr>
+        </thead>
+    </table>
+
+    <br>
+
+    <!-- l'atttribut action permet d'indique l'url de redirection lors de la validation du formulaire -->
+    <form action="#" method="POST">
+        <fieldset>
+        <legend>Identité</legend>
+        <div>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <label for="lastname">Nom :</label>
+            <input type="text"id="lastname" name="lastname" placeholder="Ecrire votre nom ici">
+        </div>
+        <div>
+        <label for="firstname">Prénom :</label>
+        <input type="text"id="firstname" name="firstname" placeholder="Ecrire votre prénom ici">
+        </div>
+        <div>
+        <label for="mail">Adresse mail</label>
+        <input type="email" id="mail" name="mail" placeholder="Entrer votre mail ici">
+        </div>
+        </fieldset>
+
+        <fieldset><label for="job">Sélectionner le poste recherché</label>
+            <select name="job" id="job">
+                <option value="1">Web Designer</option>
+                <option value="2">Designer full stack</option>
+                <option value="3">Designer UI/UX</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos motivations</legend>
+            <textarea name="motivations" id="motivations" cols="50" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos compétences</legend>
+            <input type="checkbox" name="ai" id="ai">
+            <label for="ai">Illustrator</label>
+            <input type="checkbox" name="ps" id="ps">
+            <label for="ps">Photoshop</label>
+            <input type="checkbox" name="pp" id="pp">
+            <label for="pp">Premiere Pro</label>
+            <input type="range" name="" id="">
+        </fieldset>
+
+        <div><input type="submit" value="Valider le formulaire"></div>
+    </form>
+
+</body>
+
+</html>

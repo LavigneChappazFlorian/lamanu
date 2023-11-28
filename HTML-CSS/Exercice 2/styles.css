@@ -1,0 +1,82 @@
+/* Styles de base ici */
+body {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.navigation {
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.navigation ul {
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.navigation a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+main .main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.welcome {
+    margin: 0 10px;
+    width: 50%;
+}
+
+.services {
+    margin: 0 10px 0 27%;
+    width: 50%;
+}
+
+aside {
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+    width: 35%;
+}
+
+footer {
+    border: 1px solid #000;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+/* Media Queries à ajouter */
+@media (max-width: 450px) { 
+
+    header {
+        border: 1px solid #000;
+        margin: 5% 0;
+        padding: 5%;
+    }
+
+
+}

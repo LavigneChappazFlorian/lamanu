@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 120px 50px 1fr 50px;
+    grid-template-areas: "header header header"
+                         "div4 div4 div4";
+    column-gap: 20px;
+    height: 100vh;
+}
+
+.div1 {
+    background-color: red;
+    grid: 1/2;
+}
+
+.div2 {
+    background-color: green;
+}
+
+.div3 {
+    background-color: greenyellow;
+}
+
+.div4 {
+    background-color: blue;
+}
+
+.div5 {
+    background-color: violet;   
+}
+
+.div6 {
+    background-color: goldenrod;  
+}
+.div7 {
+    background-color: grey;  
+}
+

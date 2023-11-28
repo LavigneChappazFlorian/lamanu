@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+p{
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.section1,
+.section2 {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.section1 {
+    background-color: #ffd700;
+}
+
+.section1 div{
+    background-color: #add8e6;
+}
+
+.section2 {
+    background-color: #add8e6;
+}
+
+.section2 div {
+    background-color: #ffd700;
+}
+
+/* Modifiez et/ou ajoutez le code nécessaire dans ce fichier pour que les tailles de police des paragraphes 
+soient 2 fois plus grandes que l'élément racine et que les sections fassent 80% de la taille de l'écran et soient centrées */

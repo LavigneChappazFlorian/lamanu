@@ -1,0 +1,9 @@
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid1 p, .grid1 span {
+    margin-left: 8%;
+    width: 50%;
+}

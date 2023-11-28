@@ -1,0 +1,60 @@
+.box {
+    display: flex;
+}
+
+.box-settings {
+    background-color: #D3D3D3;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.display-div {
+    display: flex;
+    background-color: #32CD32;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.auto1, .auto2 {
+    flex: auto;
+}
+
+
+.div4 {
+    flex: 4;
+    text-align: center;
+}
+
+.space {
+    background-color: #D3D3D3;
+    color: #32CD32;
+}
+
+.none {
+    flex: initial;
+}
+
+.div3 {
+    flex: 3;
+    text-align: center;
+}
+
+.div2 {
+    flex: 2;
+    text-align: center;
+}
+
+.div1 {
+    flex: 1;
+    text-align: center;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+} 

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Les navigateurs web modernes</title>
+</head>
+
+<body>
+    <!-- Début en-tête du site -->
+    <header>
+        <img src="img/logo_la_manu.png" alt="logo école La Manu">
+        <h1>Les navigateurs web modernes</h1>
+        <!-- Début navigation ancrée -->
+        <!-- Sans utiliser de CSS, je ne sais pas comment aligner les trois éléments de la navigation-->
+        <nav>
+            <ul>
+                <li><a href="#navigateurs">Les navigateurs web</a></li>
+                <li><a href="#parts-du-marche">Évolution des parts de marché</a></li>
+                <li><a href="#newsletter">Abonnement à la newsletter</a></li>
+            </ul>
+        </nav>
+        <!-- Fin navigation ancrée -->
+    </header>
+    <!-- Fin en-tête du site -->
+    <hr>
+    <!-- Début contenu principal du site -->
+    <main>
+        <!-- Intro sur les navigateurs -->
+        <div id="navigateurs">
+            <div>
+                <h2>Les navigateurs web</h2>
+                <h3>Un peu d'histoire</h3>
+                <p>Le premier navigateur date de 1990. En 1993, le premier navigateur stable est diffusé en masse.
+                    <strong>Internet Explorer</strong> apparaît en 1995. À partir des années 2000, Internet Explorer
+                    devient le leader du marché en grande partie car,
+                    il est installé par défaut, sur tous les micro-ordinateurs sous Windows.
+                </p>
+                <p>À partir de 2005, <strong>Mozilla FireFox</strong> commence à détrôner Internet Explorer,
+                    puis, à partir de 2012, c'est au tour de <strong>Google Chrome</strong> de devenir le navigateur le
+                    plus utilisé dans le monde.
+                    <strong>Microsoft Edge</strong> remplace Internet Explorer en 2015 et depuis 2020 il est construit
+                    sur la même base Chromium que Google Chrome.
+                </p>
+                <p><strong>Opera</strong> existe depuis 1994 et se maintient notamment grâce à Opera Mini, le navigateur
+                    mobile.</p>
+            </div>
+
+            <div>
+                <h3>Les principaux navigateurs</h3>
+                <p>Les navigateurs listés ci-dessous représentent les plus grandes parts de marché. Certains ne
+                    fonctionnent que sur desktop (Internet Explorer)
+                    tandis que d'autres fonctionnent aussi bien sur desktop que sur mobile (Google Chrome, Safari...).
+                </p>
+                <img src="img/main-desktop-browser-logos.png" alt="Les logos des principaux navigateurs sur ordinateur">
+                <ul>
+                    <li>Google Chrome</li>
+                    <li>Microsoft Edge / Internet Explorer</li>
+                    <li>Mozilla Firefox</li>
+                    <li>Apple Safari</li>
+                    <li>Opera</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tableau des parts de marché -->
+        <div id="parts-du-marche">
+            <h2>Évolution des parts de marché</h2>
+            <p>Les données recueillies proviennent des statistiques du site <a href="https://www.w3schools.com"
+                    target="_blank">W3Schools</a> qui recueille plus de 50 millions de visite par mois.</p>
+            <!-- Je n'arrive pas à comprendre pourquoi les images ne sont pas au dessus des noms du navigateurs-->
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Année</th>
+                        <th><img src="img/logo-chrome.png" alt="logo navigateur Chrome">Chrome</th>
+                        <th><img src="img/logo-ie.png" alt="logo navigateur Edge/IE">Edge/IE</th>
+                        <th><img src="img/logo-firefox.png" alt="logo navigateur FireFox">FireFox</th>
+                        <th><img src="img/logo-safari.png" alt="logo navigateur Safari"> Safari</th>
+                        <th><img src="img/logo-opera.png" alt="logo navigateur Opera"> Opera</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>80.7 %</td>
+                        <td>3.5 %</td>
+                        <td>8.5 %</td>
+                        <td>4.1 %</td>
+                        <td>1.6 %</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>80.4 %</td>
+                        <td>3.6 %</td>
+                        <td>9.5 %</td>
+                        <td>3.3 %</td>
+                        <td>1.7 %</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>79.0 %</td>
+                        <td>3.9 %</td>
+                        <td>10.9 %</td>
+                        <td>3.2 %</td>
+                        <td>1.6 %</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Les chiffres correspondent au mois de mai de chacune des années</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a href="downloads/browser-FR-monthly-202002-202007-bar.csv" target="_blank">Télécharger le fichier CSV des
+                parts de marché des navigateurs en France sur la période février-juillet 2020</a>
+        </div>
+    </main>
+    <!-- Fin contenu principal du site -->
+
+    <!-- Footer du site -->
+    <footer>
+        <div id="newsletter">
+            <h2>Abonnez-vous à notre newsletter</h2>
+            <form action="#" method="POST">
+                <div>
+                    <p>Prénom : <input type="text" name="name" id="first-name" placeholder="Prénom"></p>
+                </div>
+
+                <div>
+                    <p>Nom : <input type="text" name="name" id="last-name" placeholder="Nom"></p>
+                </div>
+
+                <div>
+                    <p>Votre email : <input type="email" name="email" id="email" placeholder="vous@domaine.com"></p>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="confidentialite" id="confidentialite">
+                    <label for="confidentialite">J'accepte la politique de confidentialité</label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Envoyer">
+                </div>
+                <br>
+            </form>
+        </div>
+        <hr>
+        <p>Site réalisé par La Manu</p>
+    </footer>
+    <!-- Fin du footer du site -->
+</body>
+
+</html>
